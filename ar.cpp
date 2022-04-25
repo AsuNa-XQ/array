@@ -36,7 +36,14 @@ int main() {
 
 	F(arr, 10);
 	
-	
+	int size = 0;
+	for(int i =0; i < N; i++) {
+		size += sizeof(arr[i]);
+	}
+
+	cout << "Size of array: " << size << endl;
+
+
 	delete[] arr;
 	return 0;
 }
